@@ -1,0 +1,10 @@
+I just Snipped someone but cant find credential :( (30pts)
+attachment: kkk.pcapng
+flag: HZU18{S0_R!SKY_W!TH0UT_SSL}
+writeup:
+ugugdsun pcapng file iig wireshark aar neej uzvel heregtei medeellee olohod tuvugtei tul
+strings kkk.pcapng gej textuudiig ni ylgaj awch bolno
+harin credentials buyu username password hulgailsan gej baigaa tul
+strings kkk.pcapng | grep -i "username" gej haihad 
+<input type="text" tabindex="1" value="SFpVMTh7UzBfUiFTS1lfVyFUSDBVVF9TU0x9" id="loginUsernameMain" name="loginUsername" class="uiStyle" onFocus="showHideTip(this);"></label>
+value gesen utga ni SFpVMTh7UzBfUiFTS1lfVyFUSDBVVF9TU0x9 base64 bogood uuniig decode hiisneer flag garj irne
