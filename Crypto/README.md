@@ -41,6 +41,13 @@ hint: Төмөр зам + Хашаа
 
 Төмөр зам + Хашаа гэсэн тусламж өгсөн учир энэ нь [RailFence cipher](https://planetcalc.com/6946/) юм.
 
+![RailFence](https://github.com/enhbold/HZU18-2018/blob/master/include/railfence.png)
+
+**Flag**
+```
+HZU18{cryp70d_74w741_m0r1l}
+```
+
 ## Alice and Bob (Part1)(30pts)
 **Challenge**
 ``` 
