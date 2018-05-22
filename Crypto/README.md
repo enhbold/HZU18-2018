@@ -57,8 +57,19 @@ c : 436
 ```
 **Solution**
 
-Simple [RSA](https://imgur.com/a/lnJzSXa)
-```
+Simple [RSA](https://imgur.com/a/lnJzSXa).
+
+Python дээр бичсэн скриптээ ажилуулж үзье.
+```python
+import gmpy2
+p=19
+q=53
+n=p*q
+c=436
+t=(p-1)*(q-1)
+d=gmpy2.invert(e,t)
+m=pow(c,d,n)
+print m
 ```
 **Flag**
 ```
@@ -74,7 +85,16 @@ c=38625589080883093104580367978310695507327838321390248676015440812648307006611
 ```
 **Solution**
 ```python
-
+import gmpy2
+p = 176773485669509339371361332756951225661
+q = 333197218785800427026869958933009188427
+e = 65537
+c = 38625589080883093104580367978310695507327838321390248676015440812648307006611
+t = (p-1)*(q-1)
+n = p*q
+d = gmpy2.invert(e,t)
+m = pow(c,d,n)
+print 'flag :', str(hex(int(m)))[2:-1].decode('hex')
 ```
 
 **Flag**
